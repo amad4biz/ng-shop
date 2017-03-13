@@ -6,12 +6,13 @@ import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ProductService } from './shared/services';
-import { HomeComponent } from './home';
+import { HomeComponent, ProductTileComponent } from './home';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ProductTileComponent
   ],
   imports: [
     BrowserModule,
