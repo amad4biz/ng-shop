@@ -9,7 +9,7 @@ export class ProductService {
   constructor(private http: Http) {}
 
   getAll(): Observable<Product[]> {
-    return this.http.get('/data/products/all.json')
+    return this.http.get('https://raw.githubusercontent.com/gatezh/ng-shop/master/src/data/products/all.json')
       .map(resp => resp.json());
   }
 
