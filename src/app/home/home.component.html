@@ -1,3 +1,7 @@
+<md-tab-group (selectedIndexchange)="onTabChange($event)">
+  <md-tab *ngFor="let c of categories" [label]="c | uppercase"></md-tab>
+</md-tab-group>
+
 <div class="grid-list-container">
   <md-grid-list cols="3" gutterSize="16">
     <md-grid-tile *ngFor="let p of products | async">

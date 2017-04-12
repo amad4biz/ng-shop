@@ -1,3 +1,9 @@
+@import '../../styles/palette';
+
+md-tab-group {
+  background: mat-color($ngs-background, card);
+}
+
 :host {
   display: block;
   background: #f3f3f3;
